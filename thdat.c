@@ -45,7 +45,7 @@ print_usage(
            "  x  extract an archive\n"
            "  V  display version information and exit\n"
            "OPTION can be:\n"
-           "  #  # can be 2, 3, 4, 5, 6, 7, 8, 9, 95, 10, 11, 12, 125, 128, or 13 defaults to the latest\n\n"
+           "  #  # can be 2, 3, 4, 5, 6, 7, 8, 9, 95, 10, 11, 12, 125, 128, 13, or 14 defaults to the latest\n\n"
            "Report bugs to <" PACKAGE_BUGREPORT ">.\n", argv0);
 }
 
@@ -264,7 +264,7 @@ main(
     char* argv[])
 {
     thtk_error_t* error = NULL;
-    unsigned int version = 13;
+    unsigned int version = 14;
     int mode;
 
     if (!(mode = parse_args(argc, argv, print_usage, "clxV", "", &version)))
