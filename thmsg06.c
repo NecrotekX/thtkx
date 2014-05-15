@@ -269,6 +269,7 @@ static const id_format_pair_t th13_msg_fmts[] = {
 };
 
 static const id_format_pair_t th14_msg_fmts[] = {
+    { 9, "" },
     { 27, "" },
     { 32, "" },
     { 0, NULL }
@@ -350,7 +351,6 @@ th06_find_format(unsigned int version, int id)
         case 14: {
             const char* ret;
             ret = find_format(th14_msg_fmts, id);
-            if (!ret) ret = find_format(th13_msg_fmts, id);
             if (!ret) ret = find_format(th128_msg_fmts, id);
             return ret;
         }
