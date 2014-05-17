@@ -269,14 +269,20 @@ static const id_format_pair_t th13_msg_fmts[] = {
 };
 
 static const id_format_pair_t th14_msg_fmts[] = {
-    { 9, "" },
-    { 27, "" },
-    { 32, "" },
+    { 5, "S" },
+    { 8, "S" },
+    { 14, "SS" },
+    { 20, "S" },
+    { 27, "S" },
+    { 32, "S" },
     { 0, NULL }
 };
 
 static const id_format_pair_t th143_msg_fmts[] = {
-    { 33, "" },
+    { 5, "S" },
+    { 8, "S" },
+    { 14, "SS" },
+    { 33, "S" },
     { 0, NULL }
 };
 
